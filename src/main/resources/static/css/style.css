@@ -1,0 +1,97 @@
+/* ===== بدنه و پس‌زمینه ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ===== کانتینر فرم ===== */
+.container {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* ===== تیترها ===== */
+h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* ===== فیلدهای فرم ===== */
+div {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+/* ===== دکمه ===== */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== پیام‌های خطا و اطلاعات ===== */
+.error {
+    background-color: #fee;
+    color: #c33;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #fcc;
+}
+
+.info {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #a5d6a7;
+}

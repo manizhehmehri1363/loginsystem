@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Armaturenbrett</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Willkommen bei Junior Senior GmbH</h2>
+<p>Sie haben sich erfolgreich angemeldet!</p>
+        <form th:action="@{/logout}" method="post">
+            <button type="submit">Beenden</button>
+        </form>
+    </div>
+</body>
+</html>
