@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-    <title>ورود به سیستم</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Anmelden</h2>
-        
-        <div th:if="${param.error}" class="error">
-           Der Benutzername oder das Passwort ist falsch.
-        </div>
-        
-        <div th:if="${param.logout}" class="info">
-          Sie haben sich erfolgreich abgemeldet.
-        </div>
-        
-        <form th:action="@{/login}" method="post">
-            <div>
-                <label>Benutzername</label>
-                <input type="text" name="username" required>
-            </div>
-            <div>
-                <label>Passwort:</label>
-                <input type="password" name="password" required>
-            </div>
-            <button type="submit">Anmelden</button>
-        </form>
+    <h2>Anmelden</h2>
+    <div th:if="${param.error}" style="color:red">
+        Benutzername oder Passwort falsch
     </div>
+    <div th:if="${param.logout}" style="color:green">
+        Erfolgreich abgemeldet
+    </div>
+    <form method="post" action="/login">
+        <div>
+            <label>Benutzername:</label>
+            <input type="text" name="username"/>
+        </div>
+        <div>
+            <label>Passwort:</label>
+            <input type="password" name="password"/>
+        </div>
+        <button type="submit">Anmelden</button>
+    </form>
 </body>
 </html>
